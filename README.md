@@ -1,10 +1,8 @@
-<h1 align="center">----------------------------[¡WELCOME!]--------------------------------</h1>
+<h1 align="center">----------------------------------[¡WELCOME!]--------------------------------------</h1>
 
 ###
 
-<div align="right">
-  <img height="200" src="https://i.imgflip.com/9x1rr4.gif"  />
-</div>
+<img align="right" height="300" src="https://i.imgflip.com/9x1rr4.gif"  />
 
 ###
 
