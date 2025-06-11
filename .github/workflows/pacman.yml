@@ -1,0 +1,27 @@
+name: Generate Pacman Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # se ejecuta una vez al día
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate pacman contribution graph
+        uses: Platane/pacman-contrib-graph@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          user_name: GloSosa
+          output_dir: dist
+          dark: true
+          light: true
+
+      - name: Deploy to output branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: output
+          folder: dist
